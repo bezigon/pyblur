@@ -22,7 +22,7 @@ def DefocusBlur(img, dim):
 def DiskKernel(dim):
     kernelwidth = dim
     kernel = np.zeros((kernelwidth, kernelwidth), dtype=np.float32)
-    circleCenterCoord = dim / 2
+    circleCenterCoord = dim // 2
     circleRadius = circleCenterCoord +1
     
     rr, cc = circle(circleCenterCoord, circleCenterCoord, circleRadius)
